@@ -16,3 +16,18 @@ console.log("\n\n\t\tConversion of Text From Upper Case To Lower Case!!\n\n");
 console.log("\nLast Namr Before Converting into the LowerCase:", lastName, "\n");
 //Print the Name After Converting into the LowerCase 
 console.log("Last Name After Converting into the LowerCase:", lastName.toLowerCase(), "\n");
+//Title Case
+console.log("\n\n\t\tTitle Case!!\n\n");
+//Creating the String
+var tileCasename = firstName + lastName;
+//Split te words of string 
+var words = tileCasename.split(" ");
+//Create the variable tat store the title case string
+var tCaseName = " ";
+//Initialize the for loop for changing the srting into title case
+for (var i = 0; i < words.length; i++) {
+    tCaseName += words[i].charAt(0).toUpperCase() + words[i].slice(1).toLowerCase() + " ";
+}
+;
+//Print the Titlecase string
+console.log(tCaseName);

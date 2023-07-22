@@ -25,3 +25,24 @@ console.log("\nLast Namr Before Converting into the LowerCase:",lastName,"\n");
 
 //Print the Name After Converting into the LowerCase 
 console.log("Last Name After Converting into the LowerCase:",lastName.toLowerCase(),"\n");
+
+//Title Case
+console.log("\n\n\t\tTitle Case!!\n\n");
+
+//Creating the String
+let tileCasename:string=firstName+ lastName;
+
+//Split te words of string 
+let words:string[]=tileCasename.split(" ");
+
+//Create the variable tat store the title case string
+let tCaseName:string=" "
+
+//Initialize the for loop for changing the srting into title case
+for(let i=0; i<words.length;i++){
+
+    tCaseName+=words[i].charAt(0).toUpperCase()+words[i].slice(1).toLowerCase()+" "
+};
+
+//Print the Titlecase string
+console.log(tCaseName);
